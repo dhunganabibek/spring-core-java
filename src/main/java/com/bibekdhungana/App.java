@@ -1,5 +1,8 @@
 package com.bibekdhungana;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 /**
  * Hello world!
  *
@@ -7,7 +10,9 @@ package com.bibekdhungana;
 public class App {
     public static void main(String[] args) {
         System.out.println("--------------started-----------------");
-        Car car = new Car(1, "Honda", "brown");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("car.xml");
+        Car car = applicationContext.getBean("car", Car.class);
+
         System.out.println(car);
         System.out.println("--------------ended-----------------");
     }

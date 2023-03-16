@@ -4,7 +4,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id="car" class="com.bibekdhungana.App">
+    <bean id="car" class="com.bibekdhungana.Car">
         <property name="id" value="10" />
         <property name="name" value="Honda" />
         <property name="color" value="brown" />
