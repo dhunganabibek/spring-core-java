@@ -1,2 +1,2 @@
 # spring-core-java
-### By Certoid
+### by Certoid
